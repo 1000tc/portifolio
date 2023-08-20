@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+</head>
+<body>
+  <div class="portfolio contato">
+
+   
+    <h1>Contato</h1>
+
+    <nav class="nav">
+      <ul class="menu">
+    
+        <a href="index.html"><li><img src="./images/home.png" height="20px"> Home</li></a>
+    
+        <a href="sobreMim.html"><li><img src="./images/sobreMim.png" height= "20px"> Sobre mim</li></a>
+    
+        <a href="projetos.html"><li><img src="./images/projetos.png" height= "20px"> Projetos</li></a>
+        
+        <a href="contato.html"><li><img src="./images/contato.png" height= "20px"> Contato</li></a>
+    
+        <a href="redesSociais.html"><li><img src="./images/redeSocial.png" height= "20px"> Redes sociais</li></a>
+        
+        <a href="curriculo.html"><li><img src="./images/curriculo.png" height= "20px"> Currículo</li></a>
+        
+      </ul>    
+    </nav>
+
+    <p>Se você deseja saber mais sobre mim, discutir oportunidades de colaboração ou simplesmente trocar ideias sobre tecnologia, sinta-se à vontade para entrar em contato através do e-mail ou conectar-se comigo no LinkedIn.<br>
+      
+      Atenciosamente,
+      
+      Milton.</p>
+  
+  
+      <div class="contatos">
+  
+      <input type="text" value="(81) 996739375" disabled id="numero">
+      <button class="copyButton">Copiar</button>
+    
+      <a href="https://wa.me/558196739375"target="_blank">
+      <button class="zap">Whatsapp</button></a>   
+  
+      <input type="text" value="miltonw.cruz@gmail.com" disabled id="emaill">
+      <button class="copyButton">Copiar</button>
+  
+      
+  
+      <input type="text" value="linkedin.com/in/1000ton-cruz/" disabled id="linkedin">  
+      <button class="copyButton">Copiar</button> 
+  
+      </div>
+
+  </div>
+</body>
+<style>
+  
+*{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  margin: auto;
+  width: 1100px;
+  background-color: #22223b;
+  text-align: center;
+  color: #e9ecef;
+  
+}
+a{
+  text-decoration: none;
+}
+
+.menu{
+  list-style: none;
+  display:inline-flex;
+  margin: 20px;
+  margin-left: 6.5rem;
+  margin-bottom: 5rem;
+} 
+.menu li{
+  font-weight: 500;
+  padding: 0.5rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  margin-right:1rem;
+  border-radius: 0.8rem;
+  border-style: solid;
+  background-color: #edf2fb;
+  color: #001233;
+  overflow: hidden;
+  max-width: 1rem;
+  max-height: 0.8rem;
+}
+
+.contato h1{
+  margin-left:16rem;
+
+}
+.contato nav{
+  margin-left: -10.5rem;
+  margin-bottom: -2rem;
+}
+
+
+.contato h3{
+  margin-left: 4rem;
+}
+
+.menu li:hover{
+  transition:ease-in 0.5s;
+  background-color: #ade8f4;
+  max-width: 8rem;
+  max-height: 0.8rem;
+}
+
+h1{
+  margin-top: 1rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  font-size: 70px;
+  background-image: linear-gradient(to right,#023e8a,#ade8f4,#ffe169);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  }
+  p{
+    margin-left: 6rem;
+    width: 800px;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  
+li{
+  list-style: none;
+}
+
+h3{
+  float: left;
+  margin-left: 5rem;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.contatos{
+  max-width: 580px;
+  }
+  
+  .contatos button{
+    float: left;
+    margin-left: 1rem;
+  }
+  .contatos input{
+    width: 200px;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+    float: left;
+    font-weight:600;
+    background-color: #edf2fb;
+  }
+
+
+.copyButton,.zap{
+  padding: 4px;
+  background: #264DE4;
+  border-radius: 12px;
+  color: #edf2fb;
+  cursor: pointer;
+}
+
+.zap{
+  background-color: #25d366;
+}
+</style>
+<script>
+  const copyButtons = document.querySelectorAll(".copyButton");
+const inputs = document.querySelectorAll(".contatos input");
+copyButtons.forEach((button, index) => {
+  button.addEventListener("click", function() {
+    inputs[index].removeAttribute("disabled");
+    inputs[index].select();
+    document.execCommand("copy");
+    inputs[index].setAttribute("disabled", true);
+
+    // Opcional: Dar algum feedback visual para o usuário
+    button.textContent = "Copiado!";
+    setTimeout(function() {
+      button.textContent = "Copiar";
+    }, 1500);
+  });
+});
+
+</script>
+</html>
