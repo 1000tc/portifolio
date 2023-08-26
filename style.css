@@ -110,6 +110,19 @@ h3{
 margin: 2rem;
 }
 
+.imgVid{
+  position:relative;
+}
+.video {
+  display: none;
+  position: absolute;
+  margin: 2rem;
+  top: 1.8rem;
+  left: 2.5rem;
+  object-fit:fill;
+
+
+}
 
 .habilidades{
   display: flex;

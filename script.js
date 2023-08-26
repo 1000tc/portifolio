@@ -9,7 +9,7 @@ const slideTrack = document.querySelector('.slide-track');
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
-
+const lojaBeleza = document.getElementById("lojaBeleza")
 
 let currentPosition = 0;
 const slidesToShow = 3;
@@ -74,3 +74,29 @@ window.onscroll = function() { scrollFunction() };
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+    
+    
+function showVideo(container) {
+  var image = container.querySelector('img');
+  var video = container.querySelector('.video');
+  
+  image.style.opacity = '0';
+  video.style.display = 'block';
+  
+  if (!video.paused) {
+    video.pause();
+  }
+  video.currentTime = 0;
+  video.play();
+}
+
+function showImage(container) {
+  var image = container.querySelector('img');
+  var video = container.querySelector('.video');
+  
+  image.style.opacity = '1';
+  video.style.display = 'none';
+  video.pause();
+  video.currentTime = 0;
+}
