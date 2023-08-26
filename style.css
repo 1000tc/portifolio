@@ -430,3 +430,13 @@ a{
 }
 
 
+.acessar{
+  padding: 0.8rem;
+  border-radius: 12px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color:#e9ecef;
+  font-size:22px ;
+  background-image: linear-gradient(to top left, #040b3d,#2EAAFA,#ADE7F2 );
+}
