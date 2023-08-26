@@ -39,11 +39,15 @@ a{
 
 }
 
+
 .menu li:hover{
   transition:ease-in 0.5s;
   background-color: #ade8f4;
   max-width: 8rem;
   max-height: 0.8rem;
+} 
+.menu li{
+  transition: ease-out 0.3s;
 }
 
 #perfil{
@@ -51,6 +55,10 @@ a{
   display: flex;
   border-radius: 50%;
   margin-left: 1.5rem;
+}
+
+ .acessar{
+  cursor: pointer;
 }
 h1{
 

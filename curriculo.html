@@ -29,9 +29,9 @@
 
     <h4>Meu Currículo</h4>
 
-    <p>Fazer download</p>
-    <a href="./images/miltonCV.pdf" download>
-      <button><img src="./images/download.png" width="30px"></button>
+    <p id="fazerDownload">Fazer download</p>
+    <a href="./images/miltonCV.pdf" download id="download">
+      <button><img src="./images/download.png" width="30px" id="buttonDownload"></button>
   </a>
   <img src="./images/miltonCV_page-0001.jpg" width="800px" id="curriculoImage">
   </div>
@@ -88,6 +88,9 @@
     max-width: 1rem;
     max-height: 0.8rem;
   }
+  .menu li{
+  transition: ease-out 0.3s;
+}
   
   .redesSociais h1{
     margin-left:35%;
@@ -137,5 +140,28 @@
   
 
   </style>
+  
+  <script>
+    const fazerDownload = document.getElementById('download');
+    const buttonDownload = document.getElementById('buttonDownload');
+    const textDownload = document.getElementById('fazerDownload')
 
+    fazerDownload.addEventListener('click', trocarImagem);
+
+function trocarImagem() {
+  if (buttonDownload.src.endsWith('./images/download.png')) {
+    buttonDownload.src = './images/download.png'; // Altere o caminho para a nova imagem
+  } else {
+    buttonDownload.src = './images/concluido.png';
+    buttonDownload.style.width='45px'
+    textDownload.textContent = "Download feito!";
+  }
+  setTimeout(function() {
+      textDownload.textContent = "Fazer download";
+      buttonDownload.src = './images/download.png'; 
+      buttonDownload.style.width='30px'
+    }, 1500);
+}
+
+  </script>
 </html>

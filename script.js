@@ -76,27 +76,29 @@ window.onscroll = function() { scrollFunction() };
     }
 
     
+    function showVideo(container) {
+      var image = container.querySelector('img');
+      var video = container.querySelector('.video');
+      
+      image.style.opacity = '0';
+      video.style.display = 'block';
+      
+      if (!video.paused) {
+        video.pause();
+      }
+      video.currentTime = 0;
     
-function showVideo(container) {
-  var image = container.querySelector('img');
-  var video = container.querySelector('.video');
-  
-  image.style.opacity = '0';
-  video.style.display = 'block';
-  
-  if (!video.paused) {
-    video.pause();
-  }
-  video.currentTime = 0;
-  video.play();
-}
-
-function showImage(container) {
-  var image = container.querySelector('img');
-  var video = container.querySelector('.video');
-  
-  image.style.opacity = '1';
-  video.style.display = 'none';
-  video.pause();
-  video.currentTime = 0;
-}
+      video.play().catch(function(error) {
+        // O play foi interrompido, o que é esperado.
+      });
+    }
+    
+    function showImage(container) {
+      var image = container.querySelector('img');
+      var video = container.querySelector('.video');
+      
+      image.style.opacity = '1';
+      video.style.display = 'none';
+      video.pause();
+      video.currentTime = 0;
+    }
