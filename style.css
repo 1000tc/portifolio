@@ -464,3 +464,10 @@ a{
   font-size:22px ;
   background-image: linear-gradient(to top left, #040b3d,#2EAAFA,#ADE7F2 );
 }
+
+@media (max-width: 600px) {
+    .slide-container li{
+      margin-left: 3rem;
+      margin-right: 4rem;
+    }
+    }
