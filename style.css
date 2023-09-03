@@ -465,13 +465,3 @@ a{
   background-image: linear-gradient(to top left, #040b3d,#2EAAFA,#ADE7F2 );
 }
 
-@media (max-width: 600px) {
-
-  .nav{
-    width: 300px;
-    margin-left: 5rem;
-  }
-  .contatos{
-    width: 400px;
-  }
-}
