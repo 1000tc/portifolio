@@ -466,21 +466,12 @@ a{
 }
 
 @media (max-width: 600px) {
-    .card1{
-      width: 200px;
 
-    }
-    .image{
-    width: 200px;}
-    
-.textArea1{
-  height: 190px;
+  .nav{
+    width: 300px;
+    margin-left: 5rem;
+  }
+  .contatos{
+    width: 400px;
+  }
 }
-.textArea1 p{
-  max-width: 200px;
-  font-size: 20px;
-}
-.habilidades{
-  height: 220px;
-
-}}
