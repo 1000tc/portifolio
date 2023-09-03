@@ -378,18 +378,20 @@ border-color:#4d4e4e;
 
 
 .contatos{
-max-width: 580px;
+max-width: 15rem;
+margin-left: 5rem;
+margin-bottom: 2rem;
+display: flex;
+align-items: center;
+display:table;
 }
 
-.contatos button{
-  float: left;
+.contatos button,.zap{
+  margin: 0.5rem;
   margin-left: 1rem;
 }
 .contatos input{
   width: 200px;
-  margin-left: 5rem;
-  margin-bottom: 2rem;
-  float: left;
   font-weight:600;
   background-color: #edf2fb;
 }
@@ -403,12 +405,13 @@ max-width: 580px;
 
 .zap{
   background-color: #25d366;
+  position: absolute;
 }
 
 .footer{
   list-style: none;
   width: 1000px;
-  margin-top: 15rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   text-align: left;
   margin-left: 2rem;
