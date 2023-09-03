@@ -465,3 +465,34 @@ a{
   background-image: linear-gradient(to top left, #040b3d,#2EAAFA,#ADE7F2 );
 }
 
+@media (max-width: 768px) {
+
+  .menu li{
+    max-width: 15rem;
+    max-height: 15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem;
+
+  }
+  .menu{
+    margin-left: 3.5rem;
+
+  }
+  .menu li:hover{
+    transition:ease-in 0.5s;
+    max-height: 15rem;
+    background-color: #ade8f4;
+  }
+  .habilidades{
+    max-height:600px;
+  }
+  .slide-track li{
+    max-width: 800px;
+    max-height: 600px;
+
+  }
+}
+
+
