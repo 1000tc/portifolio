@@ -489,12 +489,11 @@ a{
     max-height: 15rem;
     background-color: #ade8f4;
   }
-  .habilidades{
-    max-height:600px;
-  }
-  .slide-track li{
+
+  .slide-container li{
     max-width: 800px;
     max-height: 600px;
+      grid-template-columns: repeat(3, 10vw);
 
   }
 }
