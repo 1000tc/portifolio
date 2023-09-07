@@ -524,23 +524,18 @@ a{
   padding: 10px;
   padding-top: 6px;
 }
+
+
+.acessar{margin-left: -35%;
+
+}
+
 h2{
   font-size: 35px;
   text-align: left;
   margin-left: 1.2rem;
 }
-#lojaBeleza{
-  max-width: 380px;
-  max-height: 400px;
-  margin-left: -30%;
-  float: left;
-  left: 0;
-  
 
-}
-.contatos{
-  margin-left: 4.5rem;
-}
 
 body{
   max-width: 768px;
