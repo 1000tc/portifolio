@@ -497,16 +497,28 @@ a{
 
   }
   h1{
-    margin-left: 24rem;
+    margin-left: 2.5rem;
+    font-size: 60px;
+  }
+  p{
+    margin-left: 2rem;
+    max-width: 350px;
   }
   #perfil {
     position: relative;
-    display: inline-flex;
-    margin-left: 3rem;
+    margin-left:14%;
     margin-top: 4rem;
 }
+.nav{
+  max-width: 0.1rem;
+  font-size: 12px;
+}
 .contatos{
-  margin-left: 1.2rem;
+  margin-left: 4.5rem;
+}
+
+body{
+  max-width: 768px;
 }
 
 }
