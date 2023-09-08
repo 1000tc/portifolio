@@ -476,7 +476,7 @@ a{
   }
   #perfil{
     position: relative;
-    margin-left: 6rem;
+    margin-left: 6.5rem;
     margin-top: 4rem;
   }
   #lojaBeleza,#leilaoAuto,#simulaCompra{
@@ -497,8 +497,11 @@ a{
   }
 
   .menu li {
-    margin-left: 0; /* Remover a margem esquerda */
-    margin-right: 0; /* Remover a margem direita */
+    font-size: 8px;
+    max-width: 1.5rem;
+    padding: 0.5rem;
+    overflow:visible;
+    max-height: 2rem;
   }
 
   h1 {
@@ -546,10 +549,23 @@ a{
   .contatos{
     margin-left: 8rem;
   }
-  .contatos button{width: 60%;
+  .contatos button{
+    width: 60%;
     margin-top: 0.5rem;
 
 
+  }
+  .acessar{
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .card1{
+    width: 22vw;
+  }
+  .textArea1 p{
+    max-width: 120px;
+    font-size: 8px;
+    transform: translate(0%,5%);
   }
   .zap{position: relative;
 
