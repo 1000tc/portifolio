@@ -66,7 +66,7 @@ margin-top: 2rem;
 padding-top: 2rem;
 margin-bottom: 2rem;
 text-align: left;
-margin-left: 20rem;
+margin-left: 22rem;
 font-size: 70px;
 background-image: linear-gradient(to right,#023e8a,#ade8f4,#ffe169);
 background-clip: text;
@@ -74,8 +74,8 @@ background-clip: text;
 color: transparent;
 }
 p{
-  margin-left: 11rem;
-  width: 800px;
+  margin-left: 16rem;
+  width: 600px;
   margin-bottom: 2rem;
 }
 
@@ -90,7 +90,7 @@ li{
 
 h3{
   float: left;
-  margin-left: 5rem;
+  margin-left: 6.1rem;
   padding: 0;
   font-size: 1.5rem;
 }
@@ -383,7 +383,7 @@ border-color:#4d4e4e;
 
 .contatos{
 max-width: 30%;
-margin-left: 4rem;
+margin-left: 1.5rem;
 margin-bottom: 2rem;
 display: flex;
 align-items: center;
